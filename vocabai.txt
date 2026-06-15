@@ -1,0 +1,88 @@
+<!-- DANH SÁCH TỪ VỰNG UNIT 6 (Dán vào phần nội dung hiển thị của bạn) -->
+<div class="vocab-section">
+    <h2>Unit 6: Target Vocabulary</h2>
+    <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%; text-align: left;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th>Vocabulary</th>
+                <th>Pronunciation</th>
+                <th>Vietnamese Meaning</th>
+                <th>Audio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>Artificial Intelligence (AI)</b></td>
+                <td>/ˌɑːtɪˈfɪʃl ɪnˈtelɪɡəns/</td>
+                <td>Trí tuệ nhân tạo</td>
+                <td><button onclick="playVocab('Artificial Intelligence')">🔊 Play</button></td>
+            </tr>
+            <tr>
+                <td><b>Facial Recognition</b></td>
+                <td>/ˈfeɪʃl ˌrekəɡˈnɪʃn/</td>
+                <td>Nhận diện khuôn mặt</td>
+                <td><button onclick="playVocab('Facial Recognition')">🔊 Play</button></td>
+            </tr>
+            <tr>
+                <td><b>Chatbot</b></td>
+                <td>/ˈtʃætbɒt/</td>
+                <td>Robot trò chuyện tự động</td>
+                <td><button onclick="playVocab('Chatbot')">🔊 Play</button></td>
+            </tr>
+            <tr>
+                <td><b>Virtual Reality (VR)</b></td>
+                <td>/ˌvɜːtʃuəl riˈæləti/</td>
+                <td>Thực tế ảo</td>
+                <td><button onclick="playVocab('Virtual Reality')">🔊 Play</button></td>
+            </tr>
+            <tr>
+                <td><b>Activate</b></td>
+                <td> McCormick /ˈæktɪveɪt/</td>
+                <td>Kích hoạt</td>
+                <td><button onclick="playVocab('Activate')">🔊 Play</button></td>
+            </tr>
+            <tr>
+                <td><b>Smart app</b></td>
+                <td>/smɑːt æp/</td>
+                <td>Ứng dụng thông minh</td>
+                <td><button onclick="playVocab('Smart app')">🔊 Play</button></td>
+            </tr>
+            <tr>
+                <td><b>Platform</b></td>
+                <td>/ˈplætfɔːm/</td>
+                <td>Nền tảng</td>
+                <td><button onclick="playVocab('Platform')">🔊 Play</button></td>
+            </tr>
+            <tr>
+                <td><b>Technician</b></td>
+                <td>/tekˈnɪʃn/</td>
+                <td>Kỹ thuật viên</td>
+                <td><button onclick="playVocab('Technician')">🔊 Play</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- ĐOẠN CODE JAVASCRIPT XỬ LÝ PHÁT ÂM (Dán vào cuối file trước thẻ </body>) -->
+<script>
+function playVocab(wordText) {
+    // Kiểm tra xem trình duyệt có hỗ trợ công nghệ SpeechSynthesis (TTS) không
+    if ('speechSynthesis' in window) {
+        // Hủy các giọng đọc đang phát dở (nếu học sinh bấm liên tiếp nhiều từ)
+        window.speechSynthesis.cancel();
+
+        // Tạo đối tượng phát âm thanh từ chữ
+        const utterance = new SpeechSynthesisUtterance(wordText);
+        
+        // Cấu hình giọng đọc
+        utterance.lang = 'en-US'; // Chuẩn tiếng Anh - Mỹ
+        utterance.rate = 0.85;    // Tốc độ đọc (0.85 là chậm lại một chút để học sinh nghe rõ âm cuối)
+        utterance.pitch = 1;      // Cao độ giọng nói bình thường
+
+        // Thực hiện phát âm
+        window.speechSynthesis.speak(utterance);
+    } else {
+        alert("Sorry, your browser does not support text-to-speech.");
+    }
+}
+</script>
