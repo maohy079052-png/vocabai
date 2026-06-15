@@ -1,88 +1,131 @@
-<!-- DANH SÁCH TỪ VỰNG UNIT 6 (Dán vào phần nội dung hiển thị của bạn) -->
-<div class="vocab-section">
-    <h2>Unit 6: Target Vocabulary</h2>
-    <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%; text-align: left;">
+<!-- PHẦN GIAO DIỆN LUYỆN TẬP PHÁT ÂM (REPEAT & PRACTICE) -->
+<div class="practice-section" style="max-width: 800px; margin: 20px auto; font-family: Arial, sans-serif;">
+    <h2 style="color: #2c3e50; text-align: center;">🔄 UNIT 6: VOCABULARY REPEAT & PRACTICE</h2>
+    <p style="text-align: center; color: #7f8c8d;"><i>Hướng dẫn: Bấm nút 🔊 để nghe máy đọc mẫu, sau đó bấm nút 🎤 và đọc to lại từ đó để kiểm tra phát âm của bạn.</i></p>
+    
+    <table border="1" cellpadding="12" style="border-collapse: collapse; width: 100%; text-align: left; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
         <thead>
-            <tr style="background-color: #f2f2f2;">
-                <th>Vocabulary</th>
-                <th>Pronunciation</th>
-                <th>Vietnamese Meaning</th>
-                <th>Audio</th>
+            <tr style="background-color: #34495e; color: white;">
+                <th>Từ vựng / Phiên âm</th>
+                <th style="width: 15%;">1. Nghe</th>
+                <th style="width: 15%;">2. Nói</th>
+                <th style="width: 35%;">3. Kết quả của bạn</th>
             </tr>
         </thead>
         <tbody>
+            <!-- Từ 1 -->
             <tr>
-                <td><b>Artificial Intelligence (AI)</b></td>
-                <td>/ˌɑːtɪˈfɪʃl ɪnˈtelɪɡəns/</td>
-                <td>Trí tuệ nhân tạo</td>
-                <td><button onclick="playVocab('Artificial Intelligence')">🔊 Play</button></td>
+                <td><b>Artificial Intelligence</b><br><span style="color: #e67e22;">/ˌɑːtɪˈfɪʃl ɪnˈtelɪɡəns/</span></td>
+                <td><button onclick="listenModel('Artificial Intelligence')" style="padding: 6px 12px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">🔊 Máy đọc</button></td>
+                <td><button onclick="startSpeaking('Artificial Intelligence', 'result-1')" style="padding: 6px 12px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer;">🎤 Bật Mic</button></td>
+                <td><span id="result-1" style="font-weight: bold; color: #7f8c8d;">Chưa thực hiện...</span></td>
             </tr>
+            <!-- Từ 2 -->
             <tr>
-                <td><b>Facial Recognition</b></td>
-                <td>/ˈfeɪʃl ˌrekəɡˈnɪʃn/</td>
-                <td>Nhận diện khuôn mặt</td>
-                <td><button onclick="playVocab('Facial Recognition')">🔊 Play</button></td>
+                <td><b>Facial Recognition</b><br><span style="color: #e67e22;">/ˈfeɪʃl ˌrekəɡˈnɪʃn/</span></td>
+                <td><button onclick="listenModel('Facial Recognition')" style="padding: 6px 12px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">🔊 Máy đọc</button></td>
+                <td><button onclick="startSpeaking('Facial Recognition', 'result-2')" style="padding: 6px 12px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer;">🎤 Bật Mic</button></td>
+                <td><span id="result-2" style="font-weight: bold; color: #7f8c8d;">Chưa thực hiện...</span></td>
             </tr>
+            <!-- Từ 3 -->
             <tr>
-                <td><b>Chatbot</b></td>
-                <td>/ˈtʃætbɒt/</td>
-                <td>Robot trò chuyện tự động</td>
-                <td><button onclick="playVocab('Chatbot')">🔊 Play</button></td>
+                <td><b>Chatbot</b><br><span style="color: #e67e22;">/ˈtʃætbɒt/</span></td>
+                <td><button onclick="listenModel('Chatbot')" style="padding: 6px 12px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">🔊 Máy đọc</button></td>
+                <td><button onclick="startSpeaking('Chatbot', 'result-3')" style="padding: 6px 12px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer;">🎤 Bật Mic</button></td>
+                <td><span id="result-3" style="font-weight: bold; color: #7f8c8d;">Chưa thực hiện...</span></td>
             </tr>
+            <!-- Từ 4 -->
             <tr>
-                <td><b>Virtual Reality (VR)</b></td>
-                <td>/ˌvɜːtʃuəl riˈæləti/</td>
-                <td>Thực tế ảo</td>
-                <td><button onclick="playVocab('Virtual Reality')">🔊 Play</button></td>
+                <td><b>Virtual Reality</b><br><span style="color: #e67e22;">/ˌvɜːtʃuəl riˈæləti/</span></td>
+                <td><button onclick="listenModel('Virtual Reality')" style="padding: 6px 12px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">🔊 Máy đọc</button></td>
+                <td><button onclick="startSpeaking('Virtual Reality', 'result-4')" style="padding: 6px 12px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer;">🎤 Bật Mic</button></td>
+                <td><span id="result-4" style="font-weight: bold; color: #7f8c8d;">Chưa thực hiện...</span></td>
             </tr>
+            <!-- Từ 5 -->
             <tr>
-                <td><b>Activate</b></td>
-                <td> McCormick /ˈæktɪveɪt/</td>
-                <td>Kích hoạt</td>
-                <td><button onclick="playVocab('Activate')">🔊 Play</button></td>
+                <td><b>Activate</b><br><span style="color: #e67e22;">/ˈæktɪveɪt/</span></td>
+                <td><button onclick="listenModel('Activate')" style="padding: 6px 12px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">🔊 Máy đọc</button></td>
+                <td><button onclick="startSpeaking('Activate', 'result-5')" style="padding: 6px 12px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer;">🎤 Bật Mic</button></td>
+                <td><span id="result-5" style="font-weight: bold; color: #7f8c8d;">Chưa thực hiện...</span></td>
             </tr>
+            <!-- Từ 6 -->
             <tr>
-                <td><b>Smart app</b></td>
-                <td>/smɑːt æp/</td>
-                <td>Ứng dụng thông minh</td>
-                <td><button onclick="playVocab('Smart app')">🔊 Play</button></td>
+                <td><b>Smart app</b><br><span style="color: #e67e22;">/smɑːt æp/</span></td>
+                <td><button onclick="listenModel('Smart app')" style="padding: 6px 12px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">🔊 Máy đọc</button></td>
+                <td><button onclick="startSpeaking('Smart app', 'result-6')" style="padding: 6px 12px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer;">🎤 Bật Mic</button></td>
+                <td><span id="result-6" style="font-weight: bold; color: #7f8c8d;">Chưa thực hiện...</span></td>
             </tr>
+            <!-- Từ 7 -->
             <tr>
-                <td><b>Platform</b></td>
-                <td>/ˈplætfɔːm/</td>
-                <td>Nền tảng</td>
-                <td><button onclick="playVocab('Platform')">🔊 Play</button></td>
+                <td><b>Platform</b><br><span style="color: #e67e22;">/ˈplætfɔːm/</span></td>
+                <td><button onclick="listenModel('Platform')" style="padding: 6px 12px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">🔊 Máy đọc</button></td>
+                <td><button onclick="startSpeaking('Platform', 'result-7')" style="padding: 6px 12px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer;">🎤 Bật Mic</button></td>
+                <td><span id="result-7" style="font-weight: bold; color: #7f8c8d;">Chưa thực hiện...</span></td>
             </tr>
+            <!-- Từ 8 -->
             <tr>
-                <td><b>Technician</b></td>
-                <td>/tekˈnɪʃn/</td>
-                <td>Kỹ thuật viên</td>
-                <td><button onclick="playVocab('Technician')">🔊 Play</button></td>
+                <td><b>Technician</b><br><span style="color: #e67e22;">/tekˈnɪʃn/</span></td>
+                <td><button onclick="listenModel('Technician')" style="padding: 6px 12px; background-color: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer;">🔊 Máy đọc</button></td>
+                <td><button onclick="startSpeaking('Technician', 'result-8')" style="padding: 6px 12px; background-color: #2ecc71; color: white; border: none; border-radius: 4px; cursor: pointer;">🎤 Bật Mic</button></td>
+                <td><span id="result-8" style="font-weight: bold; color: #7f8c8d;">Chưa thực hiện...</span></td>
             </tr>
         </tbody>
     </table>
 </div>
 
-<!-- ĐOẠN CODE JAVASCRIPT XỬ LÝ PHÁT ÂM (Dán vào cuối file trước thẻ </body>) -->
+<!-- ĐOẠN CODE XỬ LÝ (DÀN TRẬN TTS VÀ STT KẾT HỢP) -->
 <script>
-function playVocab(wordText) {
-    // Kiểm tra xem trình duyệt có hỗ trợ công nghệ SpeechSynthesis (TTS) không
-    if ('speechSynthesis' in window) {
-        // Hủy các giọng đọc đang phát dở (nếu học sinh bấm liên tiếp nhiều từ)
-        window.speechSynthesis.cancel();
+// 1. Hàm phát âm thanh mẫu (TTS)
+function listenModel(text) {
+    window.speechSynthesis.cancel(); // Tắt âm thanh cũ nếu đang phát dở
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US'; // Giọng Mỹ chuẩn
+    utterance.rate = 0.85;    // Tốc độ chậm một chút để dễ bắt chước âm cuối
+    window.speechSynthesis.speak(utterance);
+}
 
-        // Tạo đối tượng phát âm thanh từ chữ
-        const utterance = new SpeechSynthesisUtterance(wordText);
-        
-        // Cấu hình giọng đọc
-        utterance.lang = 'en-US'; // Chuẩn tiếng Anh - Mỹ
-        utterance.rate = 0.85;    // Tốc độ đọc (0.85 là chậm lại một chút để học sinh nghe rõ âm cuối)
-        utterance.pitch = 1;      // Cao độ giọng nói bình thường
-
-        // Thực hiện phát âm
-        window.speechSynthesis.speak(utterance);
-    } else {
-        alert("Sorry, your browser does not support text-to-speech.");
+// 2. Hàm nhận diện giọng nói học sinh (STT) và đối chiếu kết quả
+function startSpeaking(targetWord, resultId) {
+    const resultSpan = document.getElementById(resultId);
+    
+    // Kiểm tra xem trình duyệt có hỗ trợ nhận diện giọng nói (STT) không
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+        resultSpan.innerHTML = "❌ Trình duyệt không hỗ trợ Mic (STT)";
+        return;
     }
+
+    const recognition = new SpeechRecognition();
+    recognition.lang = 'en-US'; // Nhận diện tiếng Anh
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    resultSpan.innerHTML = "🎙️ Đang nghe... Hãy nói ngay!";
+    resultSpan.style.color = "#3498db";
+
+    recognition.start();
+
+    // Khi máy nghe xong và trả về kết quả
+    recognition.onresult = function(event) {
+        let studentVoice = event.results[0][0].transcript.toLowerCase().trim();
+        let correctWord = targetWord.toLowerCase().trim();
+
+        // Xóa dấu chấm câu nếu máy tự động thêm vào cuối câu
+        studentVoice = studentVoice.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+
+        if (studentVoice === correctWord) {
+            resultSpan.innerHTML = `✅ Chính xác! (Bạn nói: "${event.results[0][0].transcript}")`;
+            resultSpan.style.color = "#2ecc71";
+        } else {
+            resultSpan.innerHTML = `❌ Chưa đúng. (Bạn nói: "${event.results[0][0].transcript}") -> Hãy thử lại!`;
+            resultSpan.style.color = "#e74c3c";
+        }
+    };
+
+    // Xử lý khi xảy ra lỗi mic hoặc học sinh im lặng quá lâu
+    recognition.onerror = function(event) {
+        resultSpan.innerHTML = "❌ Lỗi kết nối Mic hoặc chưa nghe thấy giọng. Vui lòng bấm lại!";
+        resultSpan.style.color = "#e74c3c";
+    };
 }
 </script>
